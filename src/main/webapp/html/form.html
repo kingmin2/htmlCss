@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>폼 관련 태그</h1>
+	<p>form태그는 html에서 사용자가 입력할 수 있는 양식을 제공하는 태그이다.<br>
+	form 태그 내의 input 태그를 통해 사용자가 입력한 정보를 서버로 넘기는 역할을 한다.<br>
+	*action 속성 : 폼의 입력된 값을 전송받을 서버의 클래스명을 입력한다.<br>
+	*method 속성 : get/post 방식으로 전송 방식을 지정한다.(기본 get 방식) </p>
+	<form method="post">
+		<label>검색할 내용 : </label>
+		<input type="text" size="20" name="search"> &nbsp;&nbsp;&nbsp;
+		<input type="submit" value="검색">
+	</form>
+	
+	<p>submit 버튼을 눌렀을 때 지정한 경로로 method에 지정한 방식으로 input 태그의 값을 전달</p>
+	<hr>
+	<form>
+		<fieldset>
+			<legend>필드셋의 제목 작성하는 부분</legend>
+			<label>입력1 : </label><input type="text"><br>
+			<label>입력2 : </label><input type="text"><br>
+			<label>입력3 : </label><input type="text"><br>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>필드셋으로 묶은 영역별로 구분된다.</legend>
+			<label>입력1 : </label><input type="text"><br>
+			<label>입력2 : </label><input type="text"><br>
+			<label>입력3 : </label><input type="text"><br>
+		</fieldset>
+	</form>
+</body>
+</html>
